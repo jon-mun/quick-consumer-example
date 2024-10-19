@@ -22,6 +22,13 @@ func main() {
 	rabbit_user = os.Getenv("RABBIT_USERNAME")
 	rabbit_password = os.Getenv("RABBIT_PASSWORD")
 
+	// Check if the variables are loaded correctly
+	fmt.Println("RabbitMQ Configuration:")
+	fmt.Printf("Host: %s\n", rabbit_host)
+	fmt.Printf("Port: %s\n", rabbit_port)
+	fmt.Printf("User: %s\n", rabbit_user)
+	fmt.Printf("Password: %s\n", rabbit_password)
+
 	consume()
 }
 
